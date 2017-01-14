@@ -16,17 +16,22 @@
 		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
 		crossorigin="anonymous">
-		<title>New Page</title>
+		<title>Wikimaton 5000 - Wikipedia Viewer</title>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-3"></div>
-				<div class="col-md-4">
-          <form>
-            Search Wikipedia Entry: <input id="key" type="text" name="keyword" autocomplete="on">
-            <input id="submit" type="button" value="Search" />
+				<div class="col-md-6">
+					<a id="surprise" target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-block btn-outline-info">Hit me with your best random article!</a>
+					<br>
+          <form id="search">
+            <strong>Search Wikipedia Entry: </strong><input id="key" type="text" name="keyword" placeholder="Keyword" autocomplete="on">
+            <input id="submit" type="submit" class="btn btn-sm btn-primary" value="Search" />
           </form>
+						<br>
+					<div id="results">
+					</div>
         </div>
 				<div class="col-md-3"></div>
 			</div>
